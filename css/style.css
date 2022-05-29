@@ -734,6 +734,9 @@ h3.my-profession{
 	.main-container{
 		padding-left: 0;
 	}
+	.contact-info-item {
+		margin-bottom: 20px;
+	}
 	
 }
 
