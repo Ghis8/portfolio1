@@ -714,6 +714,9 @@ h3.my-profession{
 		padding: 5px;
 		margin: 15px 0;
 	}
+	.contact-info-item {
+		margin-bottom: 20px;
+	}
 }
 @media (max-width: 1326px){
 	.home .home-img{
