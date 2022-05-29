@@ -8,7 +8,7 @@ var typed=new Typed('.typing',{
 })
 
 /* Nav  */
-
+/*
 const nav=document.querySelectorAll('.nav li a')
 nav.forEach((item)=>{
 	item.addEventListener('click',()=>{
@@ -21,3 +21,4 @@ nav.forEach((item)=>{
 		}
 	})
 })
+*/
