@@ -39,8 +39,8 @@ window.addEventListener('load',()=>{
 })
 
 /*Nav*/
-/*const navbarToggle=document.querySelector('.nav-toggler');
-const nav=document.querySelector(".aside")
+const navbarToggle=document.querySelector('.nav-toggler');
+const nav=document.querySelector(".nav")
 
 navbarToggle.addEventListener("click",()=>{
 	if(nav.classList.contains('hidden')){
@@ -49,4 +49,4 @@ navbarToggle.addEventListener("click",()=>{
 	}else{
 		nav.classList.add('hidden')
 	}
-})*/
+})

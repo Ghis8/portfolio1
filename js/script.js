@@ -10,15 +10,18 @@ var typed=new Typed('.typing',{
 /* Nav  */
 /*
 const nav=document.querySelectorAll('.nav li a')
+window.onload=()=>{
+	nav.classList.remove('active')
+}
 nav.forEach((item)=>{
-	item.addEventListener('click',()=>{
-		if(item.classList.contains('active')){
-			item.classList.remove('active')
-		}
-		else
-		{
+
+	item.addEventListener('click',()=>{	
 			item.classList.add('active')
-		}
 	})
+<<<<<<< HEAD
+
+})
+=======
 })
 */
+>>>>>>> 3068e41eacf77f7f189c5b462a64bc263adc3b9b

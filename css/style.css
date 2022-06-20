@@ -717,6 +717,14 @@ h3.my-profession{
 	.contact-info-item {
 		margin-bottom: 20px;
 	}
+<<<<<<< HEAD
+
+	..contact-info-item .icon{
+		
+	}
+
+=======
+>>>>>>> 3068e41eacf77f7f189c5b462a64bc263adc3b9b
 }
 @media (max-width: 1326px){
 	.home .home-img{
