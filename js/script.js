@@ -7,21 +7,5 @@ var typed=new Typed('.typing',{
 	loop:true
 })
 
-/* Nav  */
-/*
-const nav=document.querySelectorAll('.nav li a')
-window.onload=()=>{
-	nav.classList.remove('active')
-}
-nav.forEach((item)=>{
 
-	item.addEventListener('click',()=>{	
-			item.classList.add('active')
-	})
-<<<<<<< HEAD
-
-})
-=======
-})
-*/
 
