@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@keyframes slidein{
+	from{
+		margin-left: 50%;
+	}
+	to{
+		margin-left: 0%;
+	}
+}
+@keyframes slideup{
+	from{
+		margin-top: 50%;
+
+	}
+	to {
+		margin-top: 0%;
+	}
+}
+
 :root{
 	--bg-black-900: #f2f2fc;
 	--bg-black-100: #fdf9ff;
@@ -252,6 +271,7 @@ ul{
 	display: flex;
 	color: var(--text-black-900);
 	overflow: hidden;
+
 	
 }
 .home .home-info{
@@ -385,10 +405,16 @@ h3.my-profession{
 	flex: 0 0 40%;
 	max-width: 40%;
 	margin-top: 40px;
-	overflow-y: scroll;
 	max-height: 250px;
+	overflow: auto;
 	cursor:move;
+
 }
+
+.about .about-content .skills::-webkit-scrollbar  {
+	width: 2px;
+	background-color: gray;
+} 
 
 
 .about .about-content .skills .skill-item{
@@ -717,14 +743,13 @@ h3.my-profession{
 	.contact-info-item {
 		margin-bottom: 20px;
 	}
-<<<<<<< HEAD
+
 
 	..contact-info-item .icon{
 		
 	}
 
-=======
->>>>>>> 3068e41eacf77f7f189c5b462a64bc263adc3b9b
+
 }
 @media (max-width: 1326px){
 	.home .home-img{
