@@ -19,26 +19,26 @@ if(date.getDate()=== 15 && date.getMonth()=== 9){
 }
 
 //animations
-let section = document.querySelectorAll(".section");
-let menu = document.querySelectorAll(".nav");
+// let section = document.querySelectorAll(".section");
+// let menu = document.querySelectorAll(".nav");
 
-window.onscroll = () => {
-  section.forEach((i) => {
-    let top = window.scrollY;
-    let offset = i.offsetTop - 150;
-    let height = i.offsetHeight;
-    let id = i.getAttribute("id");
+// window.onscroll = () => {
+//   section.forEach((i) => {
+//     let top = window.scrollY;
+//     let offset = i.offsetTop - 150;
+//     let height = i.offsetHeight;
+//     let id = i.getAttribute("id");
 
-    if (top >= offset && top < offset + height) {
-      menu.forEach((link) => {
-        link.classList.remove("active");
-        document
-          .querySelector("nav a[href*=" + id + "]")
-          .classList.add("active");
-      });
-    }
-  });
-};
+//     if (top >= offset && top < offset + height) {
+//       menu.forEach((link) => {
+//         link.classList.remove("active");
+//         document
+//           .querySelector("nav a[href*=" + id + "]")
+//           .classList.add("active");
+//       });
+//     }
+//   });
+// };
 function reveal() {
 	var reveals = document.querySelectorAll(".reveal");
   
