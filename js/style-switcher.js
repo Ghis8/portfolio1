@@ -1,4 +1,7 @@
 const styleSwitcherToggler=document.querySelector(".style-switcher-toggler")
+const navbarToggle=document.querySelector('.nav-toggler');
+const nav=document.querySelector(".nav")
+
 styleSwitcherToggler.addEventListener("click",()=>{
 	document.querySelector('.style-switcher').classList.toggle("open");
 })
@@ -30,8 +33,10 @@ dayNight.addEventListener('click',()=>{
 })
 
 window.addEventListener('load',()=>{
+	
 	if (document.body.classList.contains('dark')) {
 		dayNight.querySelector('i').classList.add('fa-sun')
+
 	}
 	else{
 		dayNight.querySelector('i').classList.add('fa-moon')
@@ -39,14 +44,25 @@ window.addEventListener('load',()=>{
 })
 
 /*Nav*/
-const navbarToggle=document.querySelector('.nav-toggler');
-const nav=document.querySelector(".nav")
+
 
 navbarToggle.addEventListener("click",()=>{
 	if(nav.classList.contains('hidden')){
-
+		
 		nav.classList.remove('hidden')
 	}else{
 		nav.classList.add('hidden')
+	}
+})
+
+nav.addEventListener('click',(e)=>{
+	// console.log("element",e.target.nodeName)
+	
+	if(e.target && e.target.nodeName== 'A'){
+		const currentActive=nav.querySelector('.active')
+		if(currentActive){
+			currentActive.classList.remove('active')
+		}
+		e.target.classList.add('active')
 	}
 })

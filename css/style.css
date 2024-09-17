@@ -292,11 +292,12 @@ ul{
 	padding: 5px 15px;
 }
 
-.aside .nav li a:hover,.aside .nav li a.active{
+.aside .nav li a:hover,.aside .nav li.active{
 	background-color: var(--skin-color);
 	border-radius: 5px;
 	transition: 0.5s ease-out;
 	padding: 5px 8px;
+	color: white;
 }
 
 .aside .nav li a i{
@@ -452,7 +453,7 @@ h3.my-profession{
 
 .about .about-content .skills::-webkit-scrollbar  {
 	width: 2px;
-	background-color: gray;
+	background-color: var(--skin-color);
 } 
 
 
@@ -528,7 +529,13 @@ h3.my-profession{
 	position: relative;
 	padding-left: 37px;
 	padding-bottom: 50px;
+	height: 250px;
+	overflow-y: auto;
 }
+.about .about-content .timeline .timeline-item::-webkit-scrollbar  {
+	width: 2px;
+	background-color: var(--skin-color);
+} 
 .about .about-content .timeline .timeline-item:last-child{
 	padding-bottom: 0;
 }
@@ -548,7 +555,7 @@ h3.my-profession{
 	background-color: var(--skin-color);
 	left: 0;
 	top: 0;border-radius: 50%;
-	b
+	
 
 }
 .about .about-content .timeline .timeline-date{
@@ -592,7 +599,15 @@ h3.my-profession{
 	padding: 30px 15px;
 	text-align: center;
 	transition: all 0.3s ease;
+	height: 350px;
+	cursor: pointer;
+	overflow-y: auto;
+	
 }
+.service .service-item .service-item-inner::-webkit-scrollbar  {
+	width: 2px;
+	background-color: var(--skin-color);
+} 
 .service .service-item .service-item-inner:hover{
 	box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
@@ -658,6 +673,7 @@ h3.my-profession{
 	border-radius: 10px;
 	overflow: hidden;
 	cursor: pointer;
+	height: 230px;
 }
 .portfolio .portfolio-item-inner .portfolio-img img{
 	width: 100%;
@@ -681,7 +697,7 @@ h3.my-profession{
 }
 .links >div a i{
 	margin-right: 5px;
-	color: gray;
+	color: rgb(7, 246, 51);
 }
 
 /*Contact*/
@@ -812,4 +828,7 @@ h3.my-profession{
 	}
 	
 }
+
+
+
 
