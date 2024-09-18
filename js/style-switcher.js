@@ -1,6 +1,5 @@
 const styleSwitcherToggler=document.querySelector(".style-switcher-toggler")
-const navbarToggle=document.querySelector('.nav-toggler');
-const nav=document.querySelector(".nav")
+
 
 styleSwitcherToggler.addEventListener("click",()=>{
 	document.querySelector('.style-switcher').classList.toggle("open");
@@ -45,7 +44,8 @@ window.addEventListener('load',()=>{
 
 /*Nav*/
 
-
+const navbarToggle=document.querySelector('.nav-toggler');
+const nav=document.querySelector(".nav")
 navbarToggle.addEventListener("click",()=>{
 	if(nav.classList.contains('hidden')){
 		
